@@ -168,9 +168,7 @@ namespace First_project__bj_
                 }
 
                 //says which cards the dealer got when the game ends
-                Console.ForegroundColor = ConsoleColor.Blue;
                 string OutPut = "Dealers cards are: ";
-                Console.ForegroundColor = ConsoleColor.Gray;
                 foreach (Card card in DealerHand.cards)
                 {
                     if (card == null)
@@ -183,8 +181,8 @@ namespace First_project__bj_
                     }
 
                 }
-                Console.WriteLine(OutPut.Substring(0, OutPut.Length - 2));
                 Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine(OutPut.Substring(0, OutPut.Length - 2));
                 Console.WriteLine(string.Format("Dealer's points are: {0}", DealerHand.GetTotalPoints()));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 //if the dealer gets over 21 you win
