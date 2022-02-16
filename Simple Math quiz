@@ -1,0 +1,34 @@
+using System;
+
+namespace Some.yt.video
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello! You have started my math quiz \n Here are some questions! Good Luck! ");
+
+            Console.WriteLine("10 + 9 / 3");
+            int player_answer = Convert.ToInt32(Console.ReadLine());
+
+            if (player_answer == 12) {
+                Console.WriteLine("Correct!");
+            }
+            else {
+                Console.WriteLine("Wrong!");
+            }
+
+            Console.WriteLine("13 + 9 - 8");
+            int player_answer2 = Convert.ToInt32(Console.ReadLine());
+
+            if (player_answer2 == 14) {
+                Console.WriteLine("Correct!");
+            }
+            else {
+                Console.WriteLine("Wrong!");
+            }
+            Console.ForegroundColor = ConsoleColor.Black;
+
+        }
+    }
+}
